@@ -1,20 +1,20 @@
-ocument.addEventListener('DOMContentLoaded',funcion (){
-const aumentaFonteBotao = document.getElementById('aumentar-fonte');
-const diminuiFonteBotao = document.getElementById('diminuir-fonte');
+document.addEventListener('DOMContentLoaded', function () {
 
-let tamanhoAtualFonte = 1;
+    const aumentaFonteBotao = document.getElementById('aumentar-fonte');
+    const diminuiFonteBotao = document.getElementById('diminuir-fonte');
 
-aumentaFonteBotao.addEventListener('click', funccion(){
-    tamanhoAtualFonte += 0.1;
-    document.body.style.fontSize = '§{tamanhoAtualFonte}rem'
+    let tamanhoAtualFonte = 1;
 
-})
+    aumentaFonteBotao.addEventListener('click', function () {
+        tamanhoAtualFonte += 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`
 
-diminuiFonteBotao.addEventListener('click', funccion(){
-    tamanhoAtualFonte -= 0.1;
-    document.body.style.fontSize = '§{tamanhoAtualFonte}rem'
-    
-})
+    })
 
+    diminuiFonteBotao.addEventListener('click', function () {
+        tamanhoAtualFonte -= 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`
+
+    })
 
 })
